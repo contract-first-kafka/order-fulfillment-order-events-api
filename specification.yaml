@@ -35,7 +35,7 @@ channels:
       dispatched: {$ref: '#/components/messages/ShipmentDispatched'}
 operations:
   receiveOrders:
-    action: receive
+    action: invalid
     channel: {$ref: '#/channels/orders'}
     messages:
       - {$ref: '#/channels/orders/messages/accepted'}
